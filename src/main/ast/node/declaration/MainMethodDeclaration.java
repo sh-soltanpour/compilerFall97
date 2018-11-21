@@ -30,7 +30,7 @@ public class MainMethodDeclaration extends Declaration{
     public String toString() {
         return "MainMethodDeclaration";
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

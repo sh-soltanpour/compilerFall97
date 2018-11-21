@@ -33,7 +33,7 @@ public class VarDeclaration extends Declaration {
     public String toString() {
         return "VarDeclaration";
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

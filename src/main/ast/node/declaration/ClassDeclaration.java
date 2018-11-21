@@ -52,7 +52,7 @@ public class ClassDeclaration extends Declaration{
     public String toString() {
         return "ClassDeclaration";
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

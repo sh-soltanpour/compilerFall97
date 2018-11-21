@@ -23,7 +23,7 @@ public class StringValue extends Value {
     public String toString() {
         return "StringValue " + constant;
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

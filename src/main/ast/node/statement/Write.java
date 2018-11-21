@@ -22,7 +22,7 @@ public class Write extends Statement {
     public String toString() {
         return "Write";
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

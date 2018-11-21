@@ -32,7 +32,7 @@ public class While extends Statement {
     public String toString() {
         return "While";
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

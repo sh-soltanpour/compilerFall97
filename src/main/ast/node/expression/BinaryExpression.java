@@ -42,11 +42,8 @@ public class BinaryExpression extends Expression {
     public String toString() {
         return "BinaryExpression " + binaryOperator.name();
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
-}
-enum BinaryOperator {
-    add, sub, mult, div, and, or, eq, lt, gt, assign
 }

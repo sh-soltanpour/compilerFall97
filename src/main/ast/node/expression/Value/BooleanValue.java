@@ -23,7 +23,7 @@ public class BooleanValue extends Value {
     public String toString() {
         return "BooleanValue " + constant;
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

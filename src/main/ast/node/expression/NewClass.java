@@ -21,7 +21,7 @@ public class NewClass extends Expression {
     public String toString() {
         return "NewClass";
     }
-
+    @Override
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }

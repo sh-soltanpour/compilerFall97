@@ -1,6 +1,5 @@
 package ast;
 
-import ast.node.Node;
 import ast.node.Program;
 import ast.node.declaration.ClassDeclaration;
 import ast.node.declaration.MainMethodDeclaration;
@@ -13,10 +12,6 @@ import ast.node.expression.Value.StringValue;
 import ast.node.statement.*;
 
 public class VisitorImpl implements Visitor {
-    @Override
-    public void visit(Node node) {
-        //TODO: implement appropriate visit functionality
-    }
 
     @Override
     public void visit(Program program) {

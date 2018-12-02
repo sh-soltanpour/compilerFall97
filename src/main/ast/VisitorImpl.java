@@ -108,6 +108,11 @@ public class VisitorImpl implements Visitor {
     }
 
     @Override
+    public void visit(MethodCallInMain methodCallInMain) {
+        //TODO: implement appropriate visit functionality
+    }
+
+    @Override
     public void visit(While loop) {
         //TODO: implement appropriate visit functionality
     }
